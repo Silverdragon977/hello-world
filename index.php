@@ -38,13 +38,13 @@
                 useful and a great thing to learn!
             </p></pre>
         </div>
-        <br>
+        <br><br>
         <div align="left">
             <h3> Question 2: What do you want to take away from this class?</h3>
-            <p>
+            <pre><p>
                     I would like to have a solid understanding of databases, github,
                 and php. That way I can make websites that are more useful!
-            </p>
+            </p></pre>
         </div>
     </main>
     <br><br><br><br><br><br><br><br>
