@@ -1,0 +1,58 @@
+body {
+    background-color: #fefbd8;
+}
+
+#wrapper {
+    width: 90%;
+    min-width: 300px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fefbd8;
+}
+
+header {
+    background-color: #618685;
+    color: #fefbd8;
+    border-radius: 1em 1em 1em 1em;
+    border: 5px solid #4040a1;
+    box-shadow: .3em .6em .2em #618685;
+    min-width: 300px;
+}
+
+hr {
+    /* This makes the <hr> go across the screen */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1 {
+    text-indent: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 2em;
+    height: 2em;
+    padding-top: 25px;
+    min-width: 300px;
+}
+p {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+}
