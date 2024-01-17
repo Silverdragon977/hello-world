@@ -48,7 +48,7 @@
 
 <br><br><br><br>
 <!---Navigation Bar------------------------------------------------->
-<hr width="110%" align="left">
+<hr width="100%" align="left">
     <nav>
         <ul>
             <li> <a href="index.php">      <?php  echo $navigationArray[0] ?></a></li>
