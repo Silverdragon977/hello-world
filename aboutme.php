@@ -62,7 +62,7 @@
 <!------------------------------------------------------------------>
     <main>
         <article>
-            <img id="aboutMeImg" src="images/banner">
+            <img id="aboutMeImg" src="images/profile.jpg">
             <br><br><?php echo $aboutMeText ?>
         </article>
 
