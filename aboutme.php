@@ -22,44 +22,13 @@
     I have always been fasinated in how computers operate, and I want
     to learn all I can about them!
     </p></pre>"; 
+
+    include_once("BoilerPlate/head.view.php");
+    include_once("BoilerPlate/header.view.php");
+    include_once("BoilerPlate/navigation.view.php");
     
     ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $navigationArray[2] . " | " . $name ?></title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="wrapper">
 
-    <header id="banner-container">
-
-
-        <div id="overlay-div">
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $navigationArray[2] ?></h1>  <img id="profileImage" src="images/tempPhoto.png"></img>
-        </div>
-
-        <img id="banner" src="images/banner.jpg" alt="Banner Image">
-
-    </header>
-
-<br><br><br><br>
-
-<!---Navigation Bar------------------------------------------------->
-<hr width="100%" align="left">
-
-<nav>
-        <ul>
-            <li> <a href="index.php">      <?php  echo $navigationArray[0] ?></a></li>
-            <li> <a href="assignments.php"><?php  echo $navigationArray[1] ?></a></li>
-            <li> <a href="aboutme.php">    <?php  echo $navigationArray[2] ?></a></li> 
-        </ul>
-    </nav>
-    <hr><br><br>
-<!------------------------------------------------------------------>
     <main>
         <article>
             <img id="aboutMeImg" src="images/profile.jpg">
@@ -67,13 +36,4 @@
         </article>
 
     </main>
-    <br><br><br><br><br><br><br><br>
-    <footer>
-        <center>
-            <h6><a href="https://github.com/Silverdragon977/hello-world.git"><i> GitHub Repository Code <i></a> <h6>
-        </center>
-    </footer>
-</div>
-</body>
-</html>
-
+    <?php include_once('footer.view.php'); ?>
