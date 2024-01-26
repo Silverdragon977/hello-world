@@ -1,6 +1,29 @@
 <?php
+  define("URL_ROOT","http://localhost:3000");
+  define("ABS_ROOT",$_SERVER['DOCUMENT_ROOT']); // This gives us the Absolute path of the current dir
+  
+    
+
+
     $name="Michael Howard";
-    $navigationArray = array("Homepage", "Assignments", "About Me");
+    $pageName = "Homepage";
+    $navigationArray = [
+
+        [
+            "title" => "Homepage",   
+            "src"=> "/hello-world/index.php"
+        ], 
+
+        [
+            "title" => "Assignments",
+            "src"=> "/hello-world/assignments.php"
+        ],
+
+        [
+            "title" => "About Me",
+            "src"=> "/hello-world/aboutme.php"
+        ]
+    ];
 
     $hw1_Questions = array(
         "Question1" => "
@@ -23,9 +46,10 @@
     to learn all I can about them!
     </p></pre>";
 
-    include_once("BoilerPlate/head.view.php");
-    include_once("BoilerPlate/header.view.php");
-    include_once("BoilerPlate/navigation.view.php");
+    //echo APP_ROOT . "/src/BoilerPlate/head.view.php"; 
+    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/head.view.php");
+    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/header.view.php");
+    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/navigation.view.php");
 ?>
 
     <main>
@@ -33,5 +57,5 @@
         <article align="left"><?php echo $hw1_Questions['Question2'] ?></article>
     </main>
 
-    <?php include_once('footer.view.php'); ?>
+    <?php include_once(ABS_ROOT . '/hello-world/src/BoilerPlate/footer.view.php'); ?>
 

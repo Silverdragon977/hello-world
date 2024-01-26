@@ -3,7 +3,6 @@ This footer view file is the template for the future webpages in AdvancedWebDeve
 Created on 1/22/23 by Michael Howard
 -->
 
-
 <br><br><br><br><br><br><br><br>
     <footer>
         <center>
