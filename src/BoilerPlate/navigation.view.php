@@ -7,17 +7,17 @@ Created on 1/22/23 by Michael Howard
 
         [
             "title" => "Homepage",   
-            "src"=> "/hello-world/index.php"
+            "src"=> "/index.php"
         ], 
 
         [
             "title" => "Assignments",
-            "src"=> "/hello-world/assignments.php"
+            "src"=> "/assignments.php"
         ],
 
         [
             "title" => "About Me",
-            "src"=> "/hello-world/aboutme.php"
+            "src"=> "/aboutme.php"
         ]
     ];
 

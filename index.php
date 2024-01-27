@@ -1,9 +1,16 @@
 <?php
-  define("URL_ROOT","http://localhost:3000");
-  define("ABS_ROOT",$_SERVER['DOCUMENT_ROOT']); // This gives us the Absolute path of the current dir
-  
-    
+//   define("URL_ROOT","http://localhost:3000");
+//   define("ABS_ROOT",$_SERVER['DOCUMENT_ROOT']); // This gives us the Absolute path of the current dir  
+  $config = parse_ini_file('config.ini', true);
+  $environment = $config['ENVIRONMENT'];
+  $URL_BASE = $config[$environment]['URL_BASE'];
+  $APP_ROOT = $config[$environment]['APP_ROOT'];
+  define("APP_ROOT", dirname(__FILE__));
+  define("URL_BASE", $config[$environment]["URL_BASE"]);
 
+
+  //url_base is the url path
+  //app_root is the filepath for the server
 
     $name="Michael Howard";
     $pageName = "Homepage";
@@ -46,10 +53,10 @@
     to learn all I can about them!
     </p></pre>";
 
-    //echo APP_ROOT . "/src/BoilerPlate/head.view.php"; 
-    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/head.view.php");
-    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/header.view.php");
-    include_once(ABS_ROOT . "/hello-world/src/BoilerPlate/navigation.view.php");
+    include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
+    include_once(APP_ROOT . "/src/BoilerPlate/header.view.php");
+    include_once(APP_ROOT . "/src/BoilerPlate/navigation.view.php");
+
 ?>
 
     <main>
@@ -57,5 +64,4 @@
         <article align="left"><?php echo $hw1_Questions['Question2'] ?></article>
     </main>
 
-    <?php include_once(ABS_ROOT . '/hello-world/src/BoilerPlate/footer.view.php'); ?>
-
+    <?php  include_once(APP_ROOT . "/src/BoilerPlate/footer.view.php"); ?>
