@@ -18,17 +18,17 @@
 
         [
             "title" => "Homepage",   
-            "src"=> "/hello-world/index.php"
+            "src"=> "/www/index.php"
         ], 
 
         [
             "title" => "Assignments",
-            "src"=> "/hello-world/assignments.php"
+            "src"=> "/www/assignments.php"
         ],
 
         [
             "title" => "About Me",
-            "src"=> "/hello-world/aboutme.php"
+            "src"=> "/www/aboutme.php"
         ]
     ];
 
