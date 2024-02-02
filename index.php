@@ -18,17 +18,17 @@
 
         [
             "title" => "Homepage",   
-            "src"=> "/www/index.php"
+            "src"=> "index.php"
         ], 
 
         [
             "title" => "Assignments",
-            "src"=> "/www/assignments.php"
+            "src"=> "assignments.php"
         ],
 
         [
             "title" => "About Me",
-            "src"=> "/www/aboutme.php"
+            "src"=> "aboutme.php"
         ]
     ];
 
