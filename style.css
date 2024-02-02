@@ -30,7 +30,7 @@ header {
     overflow: hidden;
     z-index: 1;
 }
-/*-----------------Header----------------------*/
+
 #banner-container {
     position: relative;
     overflow: hidden;
@@ -76,6 +76,8 @@ h1 {
     border-style: outset;
     background-color: white;
 }
+
+/*-----------------Header----------------------*/
 #aboutMeImg {
     float: inline-block; 
     margin-right:50px;
