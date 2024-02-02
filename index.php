@@ -1,6 +1,36 @@
 <?php
+//   define("URL_ROOT","http://localhost:3000");
+//   define("ABS_ROOT",$_SERVER['DOCUMENT_ROOT']); // This gives us the Absolute path of the current dir  
+  $config = parse_ini_file('config.ini', true);
+  $environment = $config['ENVIRONMENT'];
+  $URL_BASE = $config[$environment]['URL_BASE'];
+  $APP_ROOT = $config[$environment]['APP_ROOT'];
+  define("APP_ROOT", dirname(__FILE__));
+  define("URL_BASE", $config[$environment]["URL_BASE"]);
+
+
+  //url_base is the url path
+  //app_root is the filepath for the server
+
     $name="Michael Howard";
-    $navigationArray = array("Homepage", "Assignments", "About Me");
+    $pageName = "Homepage";
+    $navigationArray = [
+
+        [
+            "title" => "Homepage",   
+            "src"=> "/hello-world/index.php"
+        ], 
+
+        [
+            "title" => "Assignments",
+            "src"=> "/hello-world/assignments.php"
+        ],
+
+        [
+            "title" => "About Me",
+            "src"=> "/hello-world/aboutme.php"
+        ]
+    ];
 
     $hw1_Questions = array(
         "Question1" => "
@@ -23,52 +53,15 @@
     to learn all I can about them!
     </p></pre>";
 
+    include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
+    include_once(APP_ROOT . "/src/BoilerPlate/header.view.php");
+    include_once(APP_ROOT . "/src/BoilerPlate/navigation.view.php");
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $navigationArray[0] . " | " . $name ?> </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="wrapper">
 
-    <header id="banner-container">
-
-
-        <div id="overlay-div">
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $navigationArray[0] ?> </h1><img id="profileImage" src="images/tempPhoto.png"></img>
-        </div>
-
-        <img id="banner" src="images/banner.jpg" alt="Banner Image">
-
-    </header>
-
-<br><br><br><br>
-<!---Navigation Bar------------------------------------------------->
-<hr width="110%" align="left">
-    <nav>
-        <ul>
-            <li> <a href="index.php">      <?php  echo $navigationArray[0] ?></a></li>
-            <li> <a href="assignments.php"><?php  echo $navigationArray[1] ?></a></li>
-            <li> <a href="aboutme.php">    <?php  echo $navigationArray[2] ?></a></li> 
-        </ul>
-    </nav>
-    <hr><br><br>
-<!------------------------------------------------------------------>
     <main>
         <article align="left"><?php echo $hw1_Questions['Question1'] ?></article><br><br>
         <article align="left"><?php echo $hw1_Questions['Question2'] ?></article>
     </main>
-    <br><br><br><br><br><br><br><br>
-    <footer>
-        <center>
-            <h6><a href="https://github.com/Silverdragon977/hello-world.git"><i> GitHub Repository Code <i></a> <h6>
-        </center>
-    </footer>
-</div>
-</body>
-</html>
 
+    <?php  include_once(APP_ROOT . "/src/BoilerPlate/footer.view.php"); ?>

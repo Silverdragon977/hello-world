@@ -1,12 +1,6 @@
 
-/* Color Pallete
- Background: #adadc2
- Contrast  : #3a2d97
- Extra     : #d8e1e6
-
-
-
-
+/* 
+Test
 */
 
 body {
@@ -21,7 +15,7 @@ body {
 /*---------------Header Below---------------*/
 #banner {
     width:100%;
-    height:5%;
+    height:75%;
     z-index: -1;
     margin:0;
 
@@ -36,7 +30,7 @@ header {
     overflow: hidden;
     z-index: 1;
 }
-/*-----------------Header----------------------*/
+
 #banner-container {
     position: relative;
     overflow: hidden;
@@ -82,6 +76,8 @@ h1 {
     border-style: outset;
     background-color: white;
 }
+
+/*-----------------Header----------------------*/
 #aboutMeImg {
     float: inline-block; 
     margin-right:50px;
